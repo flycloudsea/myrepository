@@ -1,2 +1,3 @@
 # myrepository
-first repository
+first repositor
+yes
