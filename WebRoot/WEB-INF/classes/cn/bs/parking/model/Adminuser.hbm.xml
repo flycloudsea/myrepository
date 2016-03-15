@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+    <class name="cn.bs.parking.model.Adminuser" table="adminuser">
+		<id name="Adminuid">
+			<generator class="native"/>
+		</id>
+		<property name="aname"/>
+		<property name="apassword"/>
+		
+		 
+		<!-- <set name="orders">
+			<key column="Uid"/>
+			<one-to-many class="cn.jike.exam.model.Order"/>
+		</set>-->
+	</class>
+</hibernate-mapping>

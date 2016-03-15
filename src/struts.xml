@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.devMode" value="true" />
+   <!--  开发模式，以后改本文件，不用重启tomcat -->
+    <package name="parking" extends="struts-default" namespace="/">
+        <action name="user_*" class="userAction" method="{1}">
+            <result name="success">
+                /Myjsp.jsp
+            </result>
+            <result name="querysuccess">
+                /querycount.jsp
+            </result>
+            <result name="registersuccess">
+                /regist.jsp
+            </result>
+            
+        </action>
+        <action name="door_*" class="doorAction" method="{1}">
+            <result name="opensuccess">/open.jsp</result>
+        </action>
+     </package>   
+</struts>
